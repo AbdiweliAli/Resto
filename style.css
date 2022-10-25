@@ -13,6 +13,25 @@ main,header{
 img{
     width: 100%;
 }
+.section-title{
+    text-align: center;
+    margin: 2rem auto;
+    font-family: 'Rancho', cursive;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+.section-title span{
+    display: block;
+    color: #E76F51;
+    margin-top: 05rem;
+}
+.btn{
+    background-color: #2A9D8F;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+}
 li{
     
     display: none;
@@ -68,6 +87,37 @@ li{
 
 
 /* hero end */
+/* Specialist start */
+
+.specialty-category{
+    color: #E76F51;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+}
+.specialty-category::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    left: 0;
+    right: 0.5rem;
+    border-bottom: 1px solid black;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.specialty-img{
+    box-shadow: 5px 5px 15px rgba(200, 200, 200, 0.8);
+    /* display: none; */
+}   
+
+/* Specialist end*/
 /* always media queries should placed in a bottom */
 @media screen and (min-width:725px){
     body{
@@ -107,5 +157,32 @@ li{
         width: 375px;
         margin-left: 2rem;
     }
+
+.specialties{
+    padding: 2rem;
+    background-color: #EFEFEF;
+}
+.specialty-item{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+.specialty-img{
+    width: 375px;
+}
+.price{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.price span{
+    margin-bottom: 1rem;
+}
+.specialty-item:last-child .specialty-img{
+    order: 1;
+}
+.specialty-item:last-child .specialty-info{
+    order: 2;
+}
     
 }
