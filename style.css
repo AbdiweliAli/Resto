@@ -227,6 +227,65 @@ text-align: center;
     color: #55ACEE;
 }
 /* epert style end */
+/* Reservation style end */
+.reservation{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.reservation-img{
+    height: 80vh;
+}
+.reservation-form-section{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100%;
+    height: 100%;
+
+}
+.reservation-form-section h2{
+    color: white;
+    margin-bottom: 0;
+    text-align: center;
+
+}
+.reservation-form-section span{
+    color: #E76F51;
+    display: block;
+    text-align: center;
+    /* margin-bottom: 0; */
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem 1.5rem 1.5rem;
+
+}
+input[type=text],
+input[type=email],
+input[type=number],
+textarea{
+    padding: 10px;
+    margin-bottom: 1.6em;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-input-half{
+    width: calc(50% 0.7rem);
+}
+.half-input :first-child{
+    margin-right: 1rem;
+}
+inpt[type=submit]{
+    align-self: flex-end;
+}
+input[type=submit]:hover{
+    background-color: #E76F51;
+}
+/* Reservation style end */
 /* always media queries should placed in a bottom */
 @media screen and (min-width:725px){
     body{
@@ -322,6 +381,13 @@ text-align: center;
 
 .exper-img{
     height: 350px;
+}
+
+.reservation-form-section{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: rgba(0, 0, 0, 0.75);
 }
     
 }
